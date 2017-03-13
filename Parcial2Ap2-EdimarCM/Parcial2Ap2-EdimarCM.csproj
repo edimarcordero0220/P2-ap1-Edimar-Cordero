@@ -61,6 +61,13 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Registros\TiposEmails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registros\TiposEmails.Designer.cs">
+      <DependentUpon>TiposEmails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Utilidades.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -73,6 +80,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Registros\TiposEmails.resx">
+      <DependentUpon>TiposEmails.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="app.config" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -87,6 +97,16 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="DataBase\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BLL\BLL.csproj">
+      <Project>{2d0b3303-8062-4881-809c-4d68b82c7a9b}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Entidades\Entidades.csproj">
+      <Project>{18d65fcb-0ab2-41f7-9b06-b9e42b851e51}</Project>
+      <Name>Entidades</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

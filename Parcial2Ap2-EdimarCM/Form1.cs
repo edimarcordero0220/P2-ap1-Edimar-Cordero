@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using Parcial2Ap2_EdimarCM.Registros;
 
 namespace Parcial2Ap2_EdimarCM
 {
@@ -14,6 +15,14 @@ namespace Parcial2Ap2_EdimarCM
         public Form1()
         {
             InitializeComponent();
+        }
+
+        private void tiposDeEmailsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+            Tipos_Emails re = new Tipos_Emails();
+
+            re.Show();
         }
     }
 }
