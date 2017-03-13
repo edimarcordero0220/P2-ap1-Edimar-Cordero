@@ -19,6 +19,7 @@ namespace BLL
             return retornar;
 
         }
+       
         public static bool Eliminar(TiposEmails Id)
         {
             bool result = false;

@@ -53,6 +53,36 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Consultas\Empleados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consultas\Empleados.Designer.cs">
+      <DependentUpon>Empleados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Consultas\EmpleadosEmails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consultas\EmpleadosEmails.Designer.cs">
+      <DependentUpon>EmpleadosEmails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Consultas\EmpleadosRetenciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consultas\EmpleadosRetenciones.Designer.cs">
+      <DependentUpon>EmpleadosRetenciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Consultas\Retenciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consultas\Retenciones.Designer.cs">
+      <DependentUpon>Retenciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Consultas\Tipos de Emails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consultas\Tipos de Emails.Designer.cs">
+      <DependentUpon>Tipos de Emails.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -61,6 +91,30 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Registros\Empleados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registros\Empleados.Designer.cs">
+      <DependentUpon>Empleados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Registros\EmpleadosEmails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registros\EmpleadosEmails.Designer.cs">
+      <DependentUpon>EmpleadosEmails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Registros\EmpleadosRetenciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registros\EmpleadosRetenciones.Designer.cs">
+      <DependentUpon>EmpleadosRetenciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Registros\Retenciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registros\Retenciones.Designer.cs">
+      <DependentUpon>Retenciones.cs</DependentUpon>
+    </Compile>
     <Compile Include="Registros\TiposEmails.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -97,11 +151,16 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="DataBase\" />
+    <Folder Include="Detalle\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\BLL\BLL.csproj">
       <Project>{2d0b3303-8062-4881-809c-4d68b82c7a9b}</Project>
       <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DAL\DAL.csproj">
+      <Project>{32C9C8E5-07D7-4105-BD75-A66BCEE4FAE8}</Project>
+      <Name>DAL</Name>
     </ProjectReference>
     <ProjectReference Include="..\Entidades\Entidades.csproj">
       <Project>{18d65fcb-0ab2-41f7-9b06-b9e42b851e51}</Project>
