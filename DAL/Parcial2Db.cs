@@ -15,6 +15,7 @@ namespace DAL
         }
         public DbSet <Entidades.Retenciones> Retenciones { get; set; }
         public DbSet <Entidades.TiposEmails>Tipos { get; set; }
-        
+        public DbSet <Entidades.Empleados> empleado { get; set; }
+
     }
 }
