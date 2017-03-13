@@ -83,6 +83,12 @@
     <Compile Include="Consultas\Tipos de Emails.Designer.cs">
       <DependentUpon>Tipos de Emails.cs</DependentUpon>
     </Compile>
+    <Compile Include="Detalle\Detalle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Detalle\Detalle.Designer.cs">
+      <DependentUpon>Detalle.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -151,7 +157,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="DataBase\" />
-    <Folder Include="Detalle\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\BLL\BLL.csproj">

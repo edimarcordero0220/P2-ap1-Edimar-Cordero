@@ -17,5 +17,10 @@ namespace DAL
         public DbSet <Entidades.TiposEmails>Tipos { get; set; }
         public DbSet <Entidades.Empleados> empleado { get; set; }
 
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+           
+        }
+
     }
 }
